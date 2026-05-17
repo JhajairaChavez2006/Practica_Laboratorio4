@@ -25,3 +25,27 @@ print(nuevo_texto)
 partes = texto.split()
 print("\nTexto separado en palabras:")
 print(partes)
+
+# Creación de Diccionarios 
+usuarios = [
+    {
+        "nombre": "Jhordy",
+        "email": "Jhordy24@gmail.com",
+        "Ciudad": "Cajamarca"
+    },
+    {
+        "nombre": "Luis",
+        "email": "Luis@gmail.com",
+        "ciudad": "Trujillo"
+    },
+    {
+        "nombre": "Carlos",
+        "email": "carl0s@gmail.com",
+        "ciudad": "Lima"
+    },
+    {
+        "nombre": "María",
+        "email": "maria@gmail.com",
+        "ciudad": "Piura"
+    }
+]
