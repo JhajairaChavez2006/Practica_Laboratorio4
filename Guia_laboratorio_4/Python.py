@@ -44,7 +44,7 @@ usuarios = [
     {
         "nombre": "Jhordy",
         "email": "Jhordy24@gmail.com",
-        "Ciudad": "Cajamarca"
+        "ciudad": "Cajamarca"
     },
     {
         "nombre": "Luis",
@@ -62,3 +62,12 @@ usuarios = [
         "ciudad": "Piura"
     }
 ]
+
+# Búsqueda textual por ciudad
+buscar_ciudad = "Lima"
+
+print("\nUsuarios de la ciudad:", buscar_ciudad)
+
+for usuario in usuarios:
+    if usuario["ciudad"].lower() == buscar_ciudad.lower():
+        print(usuario["nombre"], "-", usuario["email"])
