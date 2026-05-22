@@ -1,3 +1,4 @@
+
 #Declarar una cadena de texto
 texto = "Python es un lenguaje de programación muy popular"
 
@@ -71,3 +72,23 @@ print("\nUsuarios de la ciudad:", buscar_ciudad)
 for usuario in usuarios:
     if usuario["ciudad"].lower() == buscar_ciudad.lower():
         print(usuario["nombre"], "-", usuario["email"])
+
+# Lista para guardar los nombres
+nombres = []
+
+# Cantidad de usuarios
+cantidad = int(input("¿Cuántos usuarios deseas ingresar?: "))
+
+# Ingresar nombres
+for i in range(cantidad):
+    nombre = input(f"Ingrese el nombre del usuario {i+1}: ")
+    nombres.append(nombre)
+
+# Ordenar alfabéticamente
+nombres.sort()
+
+# Mostrar resultados
+print("\nNombres ordenados alfabéticamente:")
+for nombre in nombres:
+    print(nombre)
+
